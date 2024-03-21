@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duvido</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="box">
+        <p>C*uzinho quando?</p>
+        <div class="bottons-container">
+            <button>
+                <a href="index2.html">Sim, quando vc quiser</a>
+            </button>
+            <button id="no">NÂO!</button>
+        </div>
+    </div>
+</body>
+    <script>
+        let button = document.getElementById("no");
+        let height = window.innerHeight - 50;
+        let width = window.innerWidth - 50;
+
+        button.addEventListener('mouseover', function (){
+            button.style.position = "absolute";
+            button.style.top = Math.random() * height + "px";
+            button.style.left = Math.random() * width + "px";
+        })
+        console.log(iniciar)
+    </script>
+</html>
